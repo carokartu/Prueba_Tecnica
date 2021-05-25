@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 *{ 
     display: flex;
@@ -20,13 +20,15 @@ body{
 h1{
     margin: 20px;
     font-size: 30px;
-    color: tomato;
+    color: #ff75a0;
+    font-family: 'Lobster', cursive;
 }
 
 p{
     margin: 20px;
-    color: teal;
+    color: #898b8a;
     font-size: 20px;
+    font-weight: bold;
 }
 
 video{
@@ -49,12 +51,12 @@ button{
 
 .fa-play-circle{
     color: pink;
-	font-size: 80px;
+	font-size: 155px;
 }
 
 .pre-video{
 	width: 725px;
-	height: 438px;
+	height: 85%;
 	border-radius: 40px;
 }
 
@@ -116,3 +118,206 @@ button{
 	overflow: hidden;
   }
   
+
+
+  /* ////////////////////////MediaQuery! */
+
+
+ @media (max-width: 575.98px) { 
+
+    body{ 
+background-color: green;;
+    }
+    *{
+        display: block;
+    }
+    
+    .pre-video {
+        width: 95%;
+        height:75%;
+    
+    }
+    
+    button {
+        top: 190px;
+        left: 150px;
+        position: absolute;
+    }
+    .fa-play-circle {
+        
+        font-size: 105px;
+    }
+    
+     
+    h1{
+        font-size: 25px;
+        color:#16a596 ;
+    }
+    p{
+       
+        font-size: 15px;
+        line-height: 1.5; 
+    }
+    .text_container {
+        flex-direction: column;
+        width: 98%;
+        text-align: justify;
+    }
+    
+    .fa-window-close {
+        font-size: 70px;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+    
+  }
+
+ 
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    body{ 
+        background-color: pink;;
+
+ }
+
+*{
+    display: block;
+}
+
+ 
+h1{
+    font-size: 25px;
+    color:#16a596 ;
+}
+p{
+   
+    font-size: 15px;
+    line-height: 1.5; 
+}
+.pre-video {
+    width: 98%;
+    height: 686px;
+
+}
+.text_container {
+    flex-direction: column;
+    width: 98%;
+    text-align: justify;
+} 
+.fa-window-close {
+    font-size: 70px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+} 
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    body{ 
+        background-color: blue;
+}
+*{
+    display: block;
+}
+
+.pre-video {
+    width: 100%;
+    height: 686px;
+
+}
+h1{
+    font-size: 25px;
+    color:#16a596 ;
+}
+p{
+   
+    font-size: 15px;
+    line-height: 1.5; 
+}
+button {
+    top: 200px;
+    left: 350px;
+    position: absolute;
+}
+
+.fa-play-circle {
+    
+    font-size: 250px;
+}
+
+ 
+video{
+    width: 100%;
+}
+
+.text_container {
+    flex-direction: column;
+    width: 98%;
+    text-align: justify;
+}
+
+.fa-window-close {
+    font-size: 70px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    body{ 
+        background-color: red;
+
+ }
+ *{
+    display: block;
+}
+ 
+.pre-video {
+    width: 100%;
+
+    height: 686px;
+
+}
+.fa-play-circle {
+    
+    font-size: 255px;
+}
+button {
+    top: 200px;
+    left: 375px;
+    position: absolute;
+}
+h1{
+    font-size: 35px;
+}
+video{
+    width: 100%;
+}
+
+.fa-window-close {
+    font-size: 70px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+}
+
+
+@media (min-width: 1200px) {
+
+    body{ 
+        background-color:black;
+}
+
+video{
+    width: 100%;
+
+}
+}
